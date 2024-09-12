@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="stylescliente.css">
+    <script>
+        function exibirAlerta(event) {
+            alert("Dados enviados com sucesso!");
+        }
+    </script>
+    <script>
+        function redirecionarParaOutraPagina() {
+            window.location.href = "index.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de Clientes</h2>
+        <form action="#" method="POST" onsubmit="exibirAlerta(event)">
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            <div class="form-group">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+            </div>
+            <div class="form-group">
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required>
+            </div>
+            <div class="form-group">
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado" required>
+            </div>
+            <div class="form-group">
+		<button type="button" onclick="redirecionarParaOutraPagina()">Voltar</button>
+                <button type="submit">Cadastrar</button>
+		<button type="reset">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

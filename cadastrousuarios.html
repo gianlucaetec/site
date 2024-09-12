@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Cadastro de usuarios</title>
+    <link rel="stylesheet" href="stylesusuarios.css">
+    <script>
+        function exibirAlerta(event) {
+            alert("Dados enviados com sucesso!");
+        }
+    </script>
+    <script>
+        function redirecionarParaOutraPagina() {
+            window.location.href = "index.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de usuarios</h2>
+        <form action="#" method="POST" onsubmit="exibirAlerta(event)">
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="Data-nascimento">Data-nascimento:</label>
+                <input type="text" id="text" name="Data-nascimento" required>
+            </div>
+            <div class="form-group">
+                <label for="CPF">CPF:</label>
+                <input type="text" id="text" name="CPF" required>
+            </div>
+            <div class="form-group">
+                <label for="endereco">Endereco:</label>
+                <input type="text" id="endereco" name="endereco" required>
+            </div>
+            <div class="form-group">
+                <label for="RG">RG:</label>
+                <input type="text" id="text" name="RG" required>
+            </div>
+            <div class="form-group">
+            </div>
+            <div class="form-group">
+                <label for="Telefone">Telefone:</label>
+                <input type="text" id="text" name="e-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="e-mail">e-mail:</label>
+                <input type="email" id="e-mail" name="e-mail" required>
+                <div class="form-group">
+                    <label for="senha">senha:</label>
+                    <input type="text" id="senha" name="senha" required>
+            </div>
+            <div class="form-group">
+		<button type="button" onclick="redirecionarParaOutraPagina()">Voltar</button>
+                <button type="submit">Cadastrar</button>
+		<button type="reset">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
